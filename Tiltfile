@@ -1,6 +1,6 @@
 k8s_yaml(['kubernetes-manifests/adservice.yaml', 'kubernetes-manifests/cartservice.yaml', 'kubernetes-manifests/checkoutservice.yaml', 'kubernetes-manifests/currencyservice.yaml', 'kubernetes-manifests/emailservice.yaml', 'kubernetes-manifests/frontend.yaml', 'kubernetes-manifests/paymentservice.yaml', 'kubernetes-manifests/productcatalogservice.yaml', 'kubernetes-manifests/recommendationservice.yaml', 'kubernetes-manifests/redis.yaml', 'kubernetes-manifests/shippingservice.yaml'])
 docker_build('adservice', 'src/adservice')
-docker_build('cartservice', 'src/cartservice')
+docker_build('cartservice', 'src/cartservice/src')
 docker_build('checkoutservice', 'src/checkoutservice')
 docker_build('currencyservice', 'src/currencyservice')
 docker_build('emailservice', 'src/emailservice')
